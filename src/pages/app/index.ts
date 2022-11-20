@@ -3,6 +3,7 @@ import Page from "../../core/templates/page";
 import SettingPage from "../settings";
 import StatisticPage from "../statistics";
 import Header from "../../core/components/header";
+import ErrorPage from "../error";
 
 export const enum PageIds {
     MainPage = 'main-page',
@@ -29,6 +30,8 @@ class App {
             page = new SettingPage(idPage);
         } else if (idPage === PageIds.StatisticPage) {
             page = new StatisticPage(idPage);
+        } else {
+            page = new ErrorPage(idPage);
         }
 
         if (page) {
@@ -56,4 +59,5 @@ class App {
         this.enableRouteChange();
     }
 }
+
 export default App;
