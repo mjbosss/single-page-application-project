@@ -13,6 +13,12 @@ abstract class Page {
         return headerTitle;
     }
 
+    protected createBodyText(text: string) {
+        const bodyText = document.createElement('h4');
+        bodyText.innerText = text;
+        return bodyText;
+    }
+
     render() {
        return this.container;
     }

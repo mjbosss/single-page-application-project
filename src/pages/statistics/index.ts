@@ -2,7 +2,7 @@ import Page from "../../core/templates/page";
 
 class StatisticPage extends Page {
     static TextObject = {
-        MainTitle:'StatisticPage',
+        MainTitle:'Statistic Page',
     };
     constructor(id: string) {
         super(id);
